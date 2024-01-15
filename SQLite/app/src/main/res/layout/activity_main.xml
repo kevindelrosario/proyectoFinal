@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtTarjeta"
+        android:layout_width="293dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Tarjeta"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/txtEfectivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEfectivo"
+        android:layout_width="288dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Efectivo"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTarjeta" />
+
+    <ImageButton
+        android:id="@+id/btAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="307dp"
+        android:onClick="insertar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEfectivo"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/vistaTotal"
+        android:layout_width="308dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="55dp"
+        android:text="0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTarjeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

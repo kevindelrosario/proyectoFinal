@@ -1,0 +1,21 @@
+
+*base de datos: SQLite
+
+*Para aprender a usar la base de datos:
+https://www.youtube.com/watch?v=V3nQEagwGTQ
+
+*para la tabla que agrega y borra(IMPORTANTE):
+https://www.youtube.com/watch?v=K0_uaU7z7JI
+
+https://www.youtube.com/watch?v=DQOUkG4-gsE
+
+https://www.youtube.com/watch?v=JLvRRJkEmE8
+
+*Otro video que me puede ayudar: 
+https://www.youtube.com/watch?v=iWQIXjQ8ucA&list=PL-Mlm_HYjCo-rlZFTSTsrCOGODT_TTWqp
+
+*para diseño de tabla:
+https://www.youtube.com/watch?v=N_s8iR0eY8g
+
+****Para organizar mis capas en la base de datos:
+https://www.youtube.com/watch?v=lYBb4QedYH8
