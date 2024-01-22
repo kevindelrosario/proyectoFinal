@@ -1,11 +1,12 @@
 package com.example.sqlite
 
 import android.content.ContentValues
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     var txtTarjeta:EditText?=null
     var txtEfectivo:EditText?=null
     var vistaTotal:TextView? = null
+   // var btJava:Button =  findViewById(R.id.btJAVA)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,14 +25,21 @@ class MainActivity : AppCompatActivity() {
         //vinculacion
         txtTarjeta = findViewById(R.id.txtTarjeta)
         txtEfectivo = findViewById(R.id.txtEfectivo)
-        vistaTotal= findViewById(R. id.vistaTotal)
+        vistaTotal= findViewById(R.id.vistaTotal)
 
 
-
+      //  val value = SQLiteDB sqliteDB = new SQLiteDB(applicationContext())
 
         promedio()
+
+/*
+        btJava.setOnClickListener {
+            val intento1 = Intent(this, MainActivity2::class.java)
+            startActivity(intento1)
+        }*/
     }
     //funciones
+
 
 
     /****************INSERTAR**********************/
@@ -82,7 +91,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun verDatos(view: View){
 
+    }
 
     }
 
